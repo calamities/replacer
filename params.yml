@@ -1,0 +1,31 @@
+fileToReplace: 'testfile.sql'
+newFileLocation: 'newfile.sql'
+variables:
+  - var: 'Testy'
+    value: 'blammage'
+  - var: 'Client'
+    type: '#each'
+    value:
+      - name: 'Privia'
+        variables:
+          - var: 'LoaderDatabase'
+            value: 'h20_1148_Privia_Loader'
+      - name: 'DignityACN'
+        variables:
+          - var: 'LoaderDatabase'
+            value: 'h20_2005_DignityACN_Loader'
+      - name: 'Lowell'
+        variables:
+          - var: 'LoaderDatabase'
+            value: 'h20_1115_Lowell_Loader'
+  - var: 'Boomer'
+    type: '#each'
+    value:
+      - name: 'UH'
+        variables:
+          - var: 'LoaderDatabase'
+            value: 'h20_1133_UH_Loader'
+      - name: 'Granite'
+        variables:
+          - var: 'LoaderDatabase'
+            value: 'h20_1149_Granite_Loader'
